@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Eventos DOM</title>
+        <style>
+            #area {
+                font: normal 20pt Arial;
+                background: green;
+                color: white;
+                text-align: center;
+                line-height: 200px;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="area" onmouseenter="toque()" onmouseout="sair()">
+            Surpresa :)
+        </div>
+        <script>
+            function toque(){
+                var a = window.document.getElementById('area')
+                a.innerText = 'Ich billie ishi <3'
+                a.style.background = 'red'
+            }
+            function sair(){
+                var a = window.document.getElementById('area')
+                a.innerText = 'Surpresa :)'
+                a.style.background = 'green'
+            }
+
+        </script>
+    </body>
+</html>
