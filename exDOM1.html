@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> <!-- Fazer 3 botões p/ mudar a cor do fundo--> 
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            #flex {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+     <div id="flex">
+        <button onclick="fundoRosa();">Fundo rosa</button>
+        <button onclick="fundoAzul();">Fundo azul</button>
+        <button onclick="fundoRoxo();">Fundo roxo</button>
+    </div>
+        <script>
+            function fundoRosa(){
+                document.bgColor = 'pink';
+            }
+            function fundoAzul(){
+                document.bgColor = 'blue';
+            }
+            function fundoRoxo (){
+                document.bgColor = 'purple';
+            }
+        </script>
+    </body>
+</html>
