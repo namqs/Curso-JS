@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Estrangeiro?</title>
+        <style>
+           body {
+            background-color: rgb(243, 0, 0);
+           } 
+           .fonts {
+            color:white;
+            text-align: center;
+           }
+           #res {
+            color:white;
+            text-align: center;
+           }
+        </style>
+    </head>
+    <body>
+        <h1 class="fonts">Você é estrangeiro?</h1>
+        <h4 class="fonts">Faça o teste!</h4>
+        <section class="fonts">
+            Insira sua nacionalidade:<input type="name" name="txt" id="txtname">
+            <input type="button" value="verificar" onclick="verificar()">
+        </section>
+        <div id="res">
+
+        </div>
+        <script>
+            function verificar(){
+                var txt = document.querySelector('input#txtname')
+                var res = document.querySelector('div#res')
+                var txtv = String(txt.value)
+                res.innerHTML = `<p>Sua nacionalidade é ${txtv} </p>`
+                if (txtv != 'brasileiro'){
+                    res.innerHTML += `<p> Você é estrangeiro!!! :P</p>`
+                } else {
+                    res.innerHTML += `<p> Você come feijão com farofa... :)</p>`
+                }
+            }
+        </script>
+    </body>
+</html>
